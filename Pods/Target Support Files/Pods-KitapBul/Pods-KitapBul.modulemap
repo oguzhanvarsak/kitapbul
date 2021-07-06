@@ -1,0 +1,6 @@
+framework module Pods_KitapBul {
+  umbrella header "Pods-KitapBul-umbrella.h"
+
+  export *
+  module * { export * }
+}

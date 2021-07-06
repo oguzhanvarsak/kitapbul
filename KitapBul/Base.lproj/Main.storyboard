@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swift Example View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwiftExampleViewController" customModule="KitapBul" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQV-6u-j3p">
+                                <rect key="frame" x="0.0" y="-50" width="375" height="717"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PCh-cB-SYz">
+                                        <rect key="frame" x="80" y="642" width="215" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="hZL-iE-tEj"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Kamera"/>
+                                            <segment title="Arama"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentAct:" destination="BYZ-38-t0r" eventType="valueChanged" id="WUg-il-JTQ"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PCh-cB-SYz" secondAttribute="bottom" constant="44" id="6lb-Eo-rqO"/>
+                                    <constraint firstItem="PCh-cB-SYz" firstAttribute="leading" secondItem="gQV-6u-j3p" secondAttribute="leading" constant="80" id="7Oi-8T-W0F"/>
+                                    <constraint firstAttribute="trailing" secondItem="PCh-cB-SYz" secondAttribute="trailing" constant="80" id="vQL-IF-CWC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1va-xu-Jk3"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-50" id="6IK-Dt-Agx"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9bB-yl-fJH"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wvm-yq-r1L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="gQV-6u-j3p" id="VY1-x4-Z8c"/>
+                        <outlet property="segment" destination="PCh-cB-SYz" id="hFT-yd-wr7"/>
+                        <segue destination="l2O-Qk-Ub5" kind="popoverPresentation" identifier="popover" popoverAnchorView="gQV-6u-j3p" id="uCI-RG-MCO">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                        <segue destination="M3d-vs-5Bw" kind="popoverPresentation" popoverAnchorView="gQV-6u-j3p" id="uTT-Ql-Eqd">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.40000000000001" y="83.208395802098963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IRi-7M-qTa">
+            <objects>
+                <viewController id="M3d-vs-5Bw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yxF-PQ-GM1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jbt-jm-6Ew"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="l2O-Qk-Ub5" kind="popoverPresentation" identifier="popover" popoverAnchorView="yxF-PQ-GM1" id="aQw-eM-do5">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJY-Ml-LCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="820"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="bEl-WF-Y29">
+            <objects>
+                <viewController id="l2O-Qk-Ub5" customClass="PopoverViewController" customModule="KitapBul" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZH-5e-tV9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4C-1X-FI8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yle-uD-3V5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U4C-1X-FI8" firstAttribute="top" secondItem="Yle-uD-3V5" secondAttribute="top" id="85Q-HK-Vjq"/>
+                            <constraint firstItem="U4C-1X-FI8" firstAttribute="trailing" secondItem="Yle-uD-3V5" secondAttribute="trailing" id="hD9-8n-cLT"/>
+                            <constraint firstItem="U4C-1X-FI8" firstAttribute="bottom" secondItem="Yle-uD-3V5" secondAttribute="bottom" id="ktg-Tq-ByI"/>
+                            <constraint firstItem="U4C-1X-FI8" firstAttribute="leading" secondItem="Yle-uD-3V5" secondAttribute="leading" id="yud-VE-AOC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uLs-6l-jrH"/>
+                    <connections>
+                        <outlet property="webView" destination="U4C-1X-FI8" id="Atf-2G-wmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylr-4a-MbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="430"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uCI-RG-MCO"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

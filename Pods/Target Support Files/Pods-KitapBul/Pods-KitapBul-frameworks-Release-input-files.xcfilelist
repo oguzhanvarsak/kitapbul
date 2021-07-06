@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-KitapBul/Pods-KitapBul-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework
+${BUILT_PRODUCTS_DIR}/MTBBarcodeScanner/MTBBarcodeScanner.framework
+${BUILT_PRODUCTS_DIR}/MercariQRScanner/MercariQRScanner.framework
