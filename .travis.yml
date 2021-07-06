@@ -1,7 +1,7 @@
 os: osx
 language: swift
 osx_image: xcode12
-xcode_project: kitapbul.xcodeproj
-xcode_scheme: kitapbul
+xcode_project: KitapBul.xcodeproj
+xcode_scheme: KitapBul
 xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone 12 Pro Max
 script: CODE_SIGNING_REQUIRED=NO
