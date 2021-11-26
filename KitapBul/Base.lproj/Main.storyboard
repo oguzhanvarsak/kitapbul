@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SwiftExampleViewController" customModule="KitapBul" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQV-6u-j3p">
-                                <rect key="frame" x="0.0" y="-50" width="375" height="717"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PCh-cB-SYz">
-                                        <rect key="frame" x="80" y="642" width="215" height="32"/>
+                                        <rect key="frame" x="80" y="821" width="254" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="hZL-iE-tEj"/>
                                         </constraints>
@@ -45,10 +45,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gQV-6u-j3p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1va-xu-Jk3"/>
-                            <constraint firstItem="gQV-6u-j3p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-50" id="6IK-Dt-Agx"/>
-                            <constraint firstItem="gQV-6u-j3p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9bB-yl-fJH"/>
-                            <constraint firstItem="gQV-6u-j3p" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wvm-yq-r1L"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1va-xu-Jk3"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6IK-Dt-Agx"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="9bB-yl-fJH"/>
+                            <constraint firstItem="gQV-6u-j3p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="wvm-yq-r1L"/>
                         </constraints>
                     </view>
                     <connections>
@@ -71,7 +71,7 @@
             <objects>
                 <viewController id="M3d-vs-5Bw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yxF-PQ-GM1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="jbt-jm-6Ew"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,11 +91,11 @@
             <objects>
                 <viewController id="l2O-Qk-Ub5" customClass="PopoverViewController" customModule="KitapBul" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZH-5e-tV9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4C-1X-FI8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
